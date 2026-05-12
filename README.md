@@ -129,13 +129,13 @@ Obtain the password for user 'admin'
 ```
 kubectl get secret --namespace monitoring grafana -o jsonpath="{.data.admin-password}" | ForEach-Object { [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($_)) }
 ```
-## Connecting prometheus to Grafana
+### Connecting prometheus to Grafana
 1. Under the grafana UI, click on Data source under connections
 2. Provide the name as prometheus
 3. Under server URL, provide the url of the prometheus server - the one provided by when you ran - minikube service prometheus-server-ext -n monitoring
 4. Click on Save and test to add the prometheus server to Grafana
 
-## Adding the dashboard
+### Adding the dashboard
 
 1. In the [grafana-labs](https://grafana.com/grafana/dashboards/315-kubernetes-cluster-monitoring-via-prometheus/), search for **Kubernetes cluster monitoring (via Prometheus)**
 2. Copy the Dashboard-Id
