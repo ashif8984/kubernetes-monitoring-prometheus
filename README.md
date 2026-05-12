@@ -80,7 +80,10 @@ kubectl expose service prometheus-server --type=NodePort --target-port=9090 --na
 minikube service prometheus-server-ext -n monitoring
 ```
 
-![prometheus](/kubernetes-monitoring-prometheus/prometheus.png)
+<!-- ![prometheus](./kubernetes-monitoring-prometheus/prometheus.png) -->
+
+
+![prometheus](./prometheus.png)
 
 
 
@@ -117,7 +120,8 @@ minikube service grafana-ext -n monitoring
 
 
 
-![grafana](/kubernetes-monitoring-prometheus/grafana.png)
+<!-- ![grafana](/kubernetes-monitoring-prometheus/grafana.png) -->
+![grafana](./grafana.png)
 
 ### Login to Grafana 
 
