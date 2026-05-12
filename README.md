@@ -80,7 +80,11 @@ kubectl expose service prometheus-server --type=NodePort --target-port=9090 --na
 minikube service prometheus-server-ext -n monitoring
 ```
 
-![prometheus](prometheus.png)
+<!-- ![prometheus](prometheus.png) -->
+
+<p>
+    <img src="/kubernetes-monitoring-prometheus/prometheus.png" width="220" height="240" />
+</p>
 
 
 ### Installing Grafana server
@@ -112,7 +116,12 @@ kubectl expose service grafana --type=NodePort --target-port=3000 --name=grafana
 # Creates temporary access tunnel/proxy for minikube for http access
 minikube service grafana-ext -n monitoring
 ```
-![grafana](grafana.png)
+<p>
+    <img src="/kubernetes-monitoring-prometheus/grafana.png" width="220" height="240" />
+</p>
+
+
+<!-- ![grafana](grafana.png) -->
 
 ### Login to Grafana 
 
